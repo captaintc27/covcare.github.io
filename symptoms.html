@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Symptoms</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2))
+}
+
+.mainheader{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainheader .logo img{
+    width: 280px;
+    height: 100px;
+    padding-left: 50px;
+    margin-top: 18px;
+}
+
+.mainheader nav{
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainheader nav a{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;  
+    margin-top: 18px;
+}
+
+.menubutton{
+    margin-right: 60px;
+}
+
+.mainheader button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    border: none;
+    background-color: purple;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+/*SYMPTOMS*/
+.symptoms{
+    padding: 0 20px;
+}
+.primaryh{
+    font-size: 42px;
+    text-align: center;
+    margin-top: 5px;
+    color: red;
+}
+section .both{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border: 4px solid brown;
+    padding: 0 20px;
+    border-radius: 15px;
+    background-color: lightblue;
+}
+#leftside{
+    align-items: center;
+    font-size: 38px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.doctor{
+    padding: 20px 90px;
+}
+.map{
+    background-color: black;
+    overflow: hidden;
+}
+.map img{
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+footer{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="mainheader">
+            <div class="logo">
+                <img src="images/LOGO.png">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptoms.html">Symptoms</a>
+            <a href="prevention.html">Prevention</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menubutton">
+            <a href="registration.html">
+            <button>Registration</button></a>
+        </div>
+    </header>
+    <section class="symptoms">
+        <h1 class="primaryh">Main Symptoms Which Lead to Covid</h1>
+        <div class="both">
+            <div id="leftside">
+                <li>FEVER</li>
+                <li>HEADACHE</li>
+                <li>RUNNY NOSE</li>
+                <li>TIREDNESS</li>
+                <li>SORE THROAT</li>
+                <li>BODY PAIN</li>
+            </div>
+            <div id="rightside">
+                <img src="images/symptoms-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="doctor">
+        <h1 class="primaryh">COVID HAS AFFECTED A HUGE PART OF THE WORLD</h1>
+        <div class="map">
+            <img src="images/map.png" alt="">
+        </div>
+    </section>
+    <footer>Copyright&copy; 2021. All Rights Reserved.</footer>
+</body>
+</html>

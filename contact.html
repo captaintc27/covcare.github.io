@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2))
+}
+
+.mainheader{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainheader .logo img{
+    width: 280px;
+    height: 100px;
+    padding-left: 50px;
+    margin-top: 18px;
+}
+
+.mainheader nav{
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainheader nav a{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;  
+    margin-top: 18px;
+}
+
+.menubutton{
+    margin-right: 60px;
+}
+
+.mainheader button{
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    border: none;
+    background-color: purple;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+/*CONTACT*/
+.contact{
+    height: 77.1vh;
+    position: relative;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(images/medical.jpg);
+    background-size: cover;
+    
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 500;    
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contact .content p{
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: rgb(228, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    font-size: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    flex-direction: column;
+    font-weight: 500;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 600;
+    font-size: 26px;
+    color: white;
+}
+.container .contactinfo .box .text p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: black;
+}
+.contactform h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    resize: none;
+    background: transparent;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 16px;
+    margin: 14px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactform .inputbox2 input{
+    width: 40%;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #00bcd4;
+}
+footer{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="mainheader">
+            <div class="logo">
+                <img src="images/LOGO.png">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptoms.html">Symptoms</a>
+            <a href="prevention.html">Prevention</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menubutton">
+            <a href="registration.html">
+            <button>Registration</button></a>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>For Better Support please Contact us on E-mail and social media or Share us your problems below.</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                 <div class="box">
+                     <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                         <div class="text">
+                             <h3>Address</h3>
+                             <p>131/1 Sinhagad Road,<br>Manikbaug, Pune <br>411030</p>
+                         </div>
+                 </div>
+                 <div class="box">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>020-64589933</p>
+                        </div>
+                </div>
+                <div class="box">
+                    <div class="icon"></i><i class="fas fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>covcarehelp@gmail.com</p>
+                        </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2>Share Your Problem</h2>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required></textarea>
+                        <span>Type Your Message</span>
+                    </div>
+                    <div class="inputbox2">
+                        <input type="submit" name="" value="Send" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>Copyright&copy; 2021. All Rights Reserved</footer>
+</body>
+</html>
